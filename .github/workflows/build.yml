@@ -29,7 +29,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:base
+                tags: zqiannnn/playwright:base
                 target: base
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -40,7 +40,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:pnpm
+                tags: zqiannnn/playwright:pnpm
                 target: pnpm
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -79,7 +79,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:${{ matrix.target }}
+                tags: zqiannnn/playwright:${{ matrix.target }}
                 target: ${{ matrix.target }}
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -111,7 +111,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:all
+                tags: zqiannnn/playwright:all
                 target: all
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -141,7 +141,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:base-light
+                tags: zqiannnn/playwright:base-light
                 target: base-light
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -152,7 +152,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:chromium-light
+                tags: zqiannnn/playwright:chromium-light
                 target: chromium-light
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -193,7 +193,7 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: jacoblincool/playwright:${{ matrix.target }}
+                tags: zqiannnn/playwright:${{ matrix.target }}
                 target: ${{ matrix.target }}
                 platforms: linux/amd64,linux/arm64/v8
                 cache-from: type=gha
@@ -229,4 +229,4 @@ jobs:
               with:
                   username: ${{ secrets.DOCKERHUB_USERNAME }}
                   password: ${{ secrets.DOCKERHUB_TOKEN }}
-                  repository: jacoblincool/playwright
+                  repository: zqiannnn/playwright
