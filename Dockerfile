@@ -13,7 +13,7 @@ RUN curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install
 
 FROM node as base
 
-RUN npm i -g playwright-core && rm -rf /root/.npm
+RUN npm i -g playwright-core@1.44.0 && rm -rf /root/.npm
 
 ENV IMAGE_INFO="$(lsb_release -ds), Node $(node -v), Playwright $(playwright-core -V)"
 CMD eval echo $IMAGE_INFO
