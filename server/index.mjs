@@ -13,6 +13,8 @@ async function launch() {
     const channel = process.env.BROWSER_CHANNEL;
     const port = process.env.BROWSER_PORT || 53333;
     const wsPath = process.env.BROWSER_WS_ENDPOINT || "/playwright";
+    const args = ['--ignore-certificate-errors'];
+    const proxy = {server: 'http://192.168.10.4:24000'};
     if (info.includes("chromium")) {
         return existsSync("/etc/alpine-release")
             ? await chromium.launchServer({ executablePath: "/usr/bin/chromium", port, wsPath })
